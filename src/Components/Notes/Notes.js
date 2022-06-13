@@ -26,9 +26,20 @@ const Notes = () => {
     const renderNotes = (notes) => (
         <ul>
             {
+                
                 notes.map((note, key) => (
                     <li key={key}>
-                        <Link to={`/notes/${note.id}`}>{note.title}</Link>
+                        
+                        {
+                            (selectedNote)?
+                            <div>
+                                <h1>{note.title}</h1>
+                                <p>{note.description}</p>
+                            </div>
+                            :
+                            <Link to={`/notes/${note.id}`}>{note.title}</Link>
+                        }
+
                     </li>
                 ))
             }
