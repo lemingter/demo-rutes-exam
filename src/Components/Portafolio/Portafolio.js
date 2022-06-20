@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Home(props) {
+function Portafolio(props) {
     return (
         <div>
-            <p>Home</p>
+            holis
         </div>
     );
 }
 
-export default Home;
+export default Portafolio;

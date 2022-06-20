@@ -1,26 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import logo from '../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
 
-    const {title, url} = props;
-
     return ( 
-        <header className="App-header">
-            <a href={url}>
-                <img src={logo} className="App-logo" alt="logo" />
-            </a>
-            
-            <h1>{title}</h1>
-        </header>
+        <div className="App-lateral">
+            <img 
+                src="https://w1.pngwing.com/pngs/340/835/png-transparent-chicken-knife-chicken-as-food-tshirt-kitchen-knives-chicken-sandwich-sticker-crew-neck-thumbnail.png" 
+                alt="Lel"
+            />
+            <h1>Luis Elias</h1>
+            <div className="Links">
+                <Link to="/curriculum">Curriculum Vitae</Link><br/>
+                <Link to="/portafolio">Portafolio</Link><br/>
+                <Link to="/contact">Contacto</Link><br/>
+            </div>
+        </div>
     );
     
-}
-
-Header.propTypes = {
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string,
 }
 
 export default Header;

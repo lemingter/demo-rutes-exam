@@ -1,5 +1,7 @@
 .App {
+  display: flex;
   text-align: center;
+  flex-direction: row;
 }
 
 .App-logo {
@@ -22,6 +24,29 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-lateral {
+  background-color: #282c34;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App-lateral .Links {
+  flex-direction: column;
+}
+
+.App-lateral .Links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  border-top: 1px solid #000;
+}
+
+.App-lateral img {
+  padding: 20px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .App-link {

@@ -3,6 +3,7 @@ import React from 'react';
 const Footer = () => {
    
     const root = {
+        alignself: 'flex-end',
         marginTop: '20px',
     }
     return (
